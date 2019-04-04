@@ -4,15 +4,20 @@ Dashboard for sensor data using Dash from plot.ly
 
 ## Installation & Requirements
 - Create a new virtual environment.
-- Run `pip install`.
+- Run `pip install -r requirements.txt`.
 - All commands are run with Python3. Please config or change cmd according to your local environment.
 
 ## Usage
 - Check MySQL is running, proper database and tables are set.
+  - MAMP is recommended for fast setup on macOS, phpmyadmin is a good GUI tool to deal with MySQL, which packaged in MAMP as well.
+  - XAMPP is equivalent MAMP on windows.
+  - Linux user should know what they are doing.
 - Check the configuration for serial port in `serialReceiver.py`.
-- Run `python dashboard.py` to start the dashboard webserver. The access url will shown in terminal.
-- Run `python serialReceiver.py` to receive and update sensor data.
+- Run `python3 dashboard.py` to start the dashboard webserver. The access url will shown in terminal.
+- Run `python3 serialReceiver.py` to receive and update sensor data.
 
+## Dev Instruction
+- Check [Workflow Wiki page](https://github.com/USCSolarCarStrategyTeam/plotly-dashboard/wiki/Workflow) if new to pull request.
 
 ## `serialReceiver.py`
 
